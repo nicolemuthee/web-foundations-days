@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 650px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+h1 {
+  margin: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 16px;
+  resize: vertical;
+  min-height: 180px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  background: #6366f1;
+  color: white;
+  font-size: 14px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#char-count,
+#word-count {
+  font-weight: 600;
+}
+
+.warning {
+  color: orange;
+}
+
+.over {
+  color: red;
+  font-weight: bold;
+}
+
+body.dark {
+  background: #111827;
+  color: #f9fafb;
+}
+
+body.dark .card {
+  background: #1f2937;
+}
+
+body.dark textarea {
+  background: #374151;
+  color: white;
+  border-color: #4b5563;
+}
